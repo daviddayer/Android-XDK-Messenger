@@ -111,7 +111,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:adapter="@{viewModel.getAdapter}"
-                app:itemHeight="@dimen/layer_ui_item_height_medium"
+                app:itemHeight="@dimen/layer_xdk_item_height_medium"
                 />
 
             <Button
