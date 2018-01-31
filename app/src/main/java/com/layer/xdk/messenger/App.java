@@ -73,8 +73,6 @@ public class App extends Application {
 
         // Allow the LayerClient to track app state
         LayerClient.applicationCreated(this);
-
-        com.layer.xdk.messenger.util.Util.init(this, getLayerClient(), getPicasso());
     }
 
     public static Application getInstance() {
@@ -179,6 +177,8 @@ public class App extends Application {
 
             /* Register AuthenticationProvider for handling authentication challenges */
             sLayerClient.registerAuthenticationListener(getAuthenticationProvider());
+
+            com.layer.xdk.messenger.util.Util.init(sInstance, getLayerClient(), getPicasso());
         }
         return sLayerClient;
     }
