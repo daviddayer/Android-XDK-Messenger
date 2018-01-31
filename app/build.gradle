@@ -36,7 +36,7 @@ final versions = rootProject.ext
 
 dependencies {
     // All flavors
-    compile project(':layer-atlas')
+    compile project(':xdk-ui')
 
     compile "com.google.firebase:firebase-messaging:10.2.0"
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
