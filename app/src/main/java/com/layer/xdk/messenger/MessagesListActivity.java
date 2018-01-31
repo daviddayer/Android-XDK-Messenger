@@ -1,10 +1,12 @@
 package com.layer.xdk.messenger;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -15,8 +17,6 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.TextView;
 
-import com.layer.xdk.messenger.databinding.ActivityMessagesListBinding;
-import com.layer.xdk.messenger.util.Util;
 import com.layer.sdk.LayerClient;
 import com.layer.sdk.changes.LayerChange;
 import com.layer.sdk.changes.LayerChangeEvent;
@@ -26,16 +26,19 @@ import com.layer.sdk.messaging.Conversation;
 import com.layer.sdk.messaging.ConversationOptions;
 import com.layer.sdk.messaging.Identity;
 import com.layer.sdk.messaging.LayerObject;
+import com.layer.sdk.messaging.Message;
+import com.layer.xdk.messenger.databinding.ActivityMessagesListBinding;
+import com.layer.xdk.messenger.util.Util;
 import com.layer.xdk.ui.AddressBar;
 import com.layer.xdk.ui.composebar.ComposeBar;
 import com.layer.xdk.ui.conversation.ConversationView;
 import com.layer.xdk.ui.conversation.ConversationViewModel;
-import com.layer.xdk.ui.message.MessageItemsListViewModel;
 import com.layer.xdk.ui.message.file.FileSender;
 import com.layer.xdk.ui.message.location.CurrentLocationSender;
 import com.layer.xdk.ui.message.messagetypes.threepartimage.CameraSender;
 import com.layer.xdk.ui.message.messagetypes.threepartimage.GallerySender;
 import com.layer.xdk.ui.message.text.RichTextSender;
+import com.layer.xdk.ui.recyclerview.OnItemClickListener;
 
 import java.util.HashSet;
 import java.util.List;
@@ -44,7 +47,6 @@ public class MessagesListActivity extends AppCompatActivity {
     private UiState mState;
     private Conversation mConversation;
 
-    private MessageItemsListViewModel mMessageItemsListViewModel;
     private AddressBar mAddressBar;
     private ConversationView mConversationView;
     private ComposeBar mComposeBar;
@@ -215,13 +217,46 @@ public class MessagesListActivity extends AppCompatActivity {
 
     private void setupConversation(Conversation conversation) {
         mConversationView = mActivityMessagesListBinding.conversation;
-        mMessageItemsListViewModel = new MessageItemsListViewModel(this, App.getLayerClient(),
-                Util.getImageCacheWrapper(), Util.getDateFormatter(this), Util.getIdentityFormatter(this));
 
         mConversationViewModel = new ConversationViewModel(getApplicationContext(), App.getLayerClient(),
                 Util.getCellFactories(App.getLayerClient()), Util.getImageCacheWrapper(),
                 Util.getDateFormatter(getApplicationContext()), Util.getIdentityFormatter(this));
 
+        mConversationViewModel.getMessageItemsListViewModel().setItemClickListener(new OnItemClickListener<Message>() {
+            @Override
+            public void onItemClick(Message message) {
+            }
+
+            @Override
+            public boolean onItemLongClick(final Message message) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(MessagesListActivity.this)
+                        .setMessage(R.string.alert_message_delete_message)
+                        .setNegativeButton(R.string.alert_button_cancel, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        })
+
+                        .setPositiveButton(R.string.alert_button_delete_all_participants, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                message.delete(LayerClient.DeletionMode.ALL_PARTICIPANTS);
+                            }
+                        });
+                // User delete is only available if read receipts are enabled
+                if (message.getConversation().isReadReceiptsEnabled()) {
+                    builder.setNeutralButton(R.string.alert_button_delete_my_devices, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            message.delete(LayerClient.DeletionMode.ALL_MY_DEVICES);
+                        }
+                    });
+                }
+                builder.show();
+                return true;
+            }
+        });
         mActivityMessagesListBinding.setViewModel(mConversationViewModel);
         setConversation(conversation, conversation != null);
         mActivityMessagesListBinding.executePendingBindings();
