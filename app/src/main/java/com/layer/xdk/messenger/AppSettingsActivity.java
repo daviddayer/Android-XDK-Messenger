@@ -60,7 +60,7 @@ public class AppSettingsActivity extends BaseActivity implements LayerConnection
     private Switch mVerboseLogging;
     private TextView mAppVersion;
     private TextView mAndroidVersion;
-    private TextView mAtlasVersion;
+    private TextView mXdkVersion;
     private TextView mLayerVersion;
     private TextView mUserId;
 
@@ -94,7 +94,7 @@ public class AppSettingsActivity extends BaseActivity implements LayerConnection
         mTelemetry = (Switch) findViewById(R.id.telemetry_switch);
         mVerboseLogging = (Switch) findViewById(R.id.logging_switch);
         mAppVersion = (TextView) findViewById(R.id.app_version);
-        mAtlasVersion = (TextView) findViewById(R.id.atlas_version);
+        mXdkVersion = (TextView) findViewById(R.id.xdk_version);
         mLayerVersion = (TextView) findViewById(R.id.layer_version);
         mAndroidVersion = (TextView) findViewById(R.id.android_version);
         mUserId = (TextView) findViewById(R.id.user_id);
@@ -114,7 +114,7 @@ public class AppSettingsActivity extends BaseActivity implements LayerConnection
         mUserState.setOnLongClickListener(this);
         mAppVersion.setOnLongClickListener(this);
         mAndroidVersion.setOnLongClickListener(this);
-        mAtlasVersion.setOnLongClickListener(this);
+        mXdkVersion.setOnLongClickListener(this);
         mLayerVersion.setOnLongClickListener(this);
         mUserId.setOnLongClickListener(this);
         mConversationCount.setOnLongClickListener(this);
@@ -298,7 +298,7 @@ public class AppSettingsActivity extends BaseActivity implements LayerConnection
         mVerboseLogging.setEnabled(!enabledByEnvironment);
         mVerboseLogging.setChecked(enabledByEnvironment || LayerClient.isLoggingEnabled());
         mAppVersion.setText(getString(R.string.settings_content_app_version, BuildConfig.VERSION_NAME, BuildConfig.VERSION_CODE));
-        mAtlasVersion.setText(Util.getVersion());
+        mXdkVersion.setText(Util.getVersion());
         mLayerVersion.setText(LayerClient.getVersion());
         mAndroidVersion.setText(getString(R.string.settings_content_android_version, Build.VERSION.RELEASE, Build.VERSION.SDK_INT));
 

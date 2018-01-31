@@ -60,7 +60,7 @@
     <string name="settings_switch_verbose_logging">Verbose Logging</string>
     <string name="settings_title_app_version">App Version</string>
     <string name="settings_title_android_version">Android Version</string>
-    <string name="settings_title_atlas_version">Atlas Version</string>
+    <string name="settings_title_xdk_version">XDK Version</string>
     <string name="settings_title_layer_version">Layer Version</string>
     <string name="settings_title_user_id">User ID</string>
     <string name="settings_title_statistics">Statistics</string>
@@ -77,7 +77,7 @@
     <string name="notifications_new_messages">%1$d new messages</string>
 
     <string name="push_notification_no_content_title">New message (tap to sync)</string>
-    <string name="app_name">Atlas Messenger</string>
+    <string name="app_name">XDK Messenger</string>
     <string name="app_id_required">Please set your Layer App ID in App.java.  You can get your Layer App ID from the developer dashboard.</string>
 
     <string name="login_email_hint">Email</string>

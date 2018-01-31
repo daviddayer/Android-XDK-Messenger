@@ -1,12 +1,12 @@
 package com.layer.xdk.messenger.util;
 
 /**
- * Unified Log class used by Atlas Messenger classes that maintains similar signatures to
- * `android.util.Log`. Logs are tagged with `Atlas`.
+ * Unified Log class used by XDK Messenger classes that maintains similar signatures to
+ * `android.util.Log`. Logs are tagged with `LayerXDKMsgr`.
  */
 public class Log {
-    private static final String TAG = "LayerAtlasMsgr";
-    private static final String PERF_TAG = "LayerPerf:AtlasMsgr";
+    private static final String TAG = "LayerXDKMsgr";
+    private static final String PERF_TAG = "LayerPerf:XDKMsgr";
 
     // Makes IDE auto-completion easy
     public static final int VERBOSE = android.util.Log.VERBOSE;

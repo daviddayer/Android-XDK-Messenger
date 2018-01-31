@@ -20,7 +20,7 @@ import com.squareup.picasso.Picasso;
 import java.util.Arrays;
 
 /**
- * App provides static access to a LayerClient and other Atlas and Messenger context, including
+ * App provides static access to a LayerClient and other XDK and Messenger context, including
  * AuthenticationProvider, ParticipantProvider, Participant, and Picasso.
  *
  * @see LayerClient

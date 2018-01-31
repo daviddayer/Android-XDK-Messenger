@@ -288,14 +288,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/settings_title_atlas_version"
+                android:text="@string/settings_title_xdk_version"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <TextView
-                android:id="@+id/atlas_version"
+                android:id="@+id/xdk_version"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="[atlas version]"
+                android:text="[XDK version]"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
         </LinearLayout>
