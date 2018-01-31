@@ -1,4 +1,4 @@
-package com.layer.messenger;
+package com.layer.xdk.messenger;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -13,10 +13,10 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.layer.messenger.util.LayerAuthenticationProvider;
-import com.layer.messenger.util.CustomEndpoint;
-import com.layer.messenger.util.AuthenticationProvider;
-import com.layer.messenger.util.Log;
+import com.layer.xdk.messenger.util.LayerAuthenticationProvider;
+import com.layer.xdk.messenger.util.CustomEndpoint;
+import com.layer.xdk.messenger.util.AuthenticationProvider;
+import com.layer.xdk.messenger.util.Log;
 
 public class LoginActivity extends AppCompatActivity {
     EditText mEmail;

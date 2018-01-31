@@ -1,4 +1,4 @@
-package com.layer.messenger;
+package com.layer.xdk.messenger;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -11,8 +11,8 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.NotificationCompat;
 
-import com.layer.messenger.util.Log;
-import com.layer.messenger.util.Util;
+import com.layer.xdk.messenger.util.Log;
+import com.layer.xdk.messenger.util.Util;
 import com.layer.sdk.LayerClient;
 import com.layer.sdk.messaging.Conversation;
 import com.layer.sdk.messaging.Message;

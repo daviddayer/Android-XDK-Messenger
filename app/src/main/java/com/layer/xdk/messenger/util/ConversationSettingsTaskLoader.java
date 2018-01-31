@@ -1,17 +1,17 @@
-package com.layer.messenger.util;
+package com.layer.xdk.messenger.util;
 
 
 import android.content.Context;
 import android.support.v4.content.AsyncTaskLoader;
 
-import com.layer.messenger.App;
+import com.layer.xdk.messenger.App;
 import com.layer.sdk.messaging.Conversation;
 
 import java.util.List;
 
 /**
  * This class loads total messages, unread messages and total conversation in a background thread
- * Use in {@link com.layer.messenger.AppSettingsActivity}
+ * Use in {@link com.layer.xdk.messenger.AppSettingsActivity}
  */
 
 public class ConversationSettingsTaskLoader extends AsyncTaskLoader<ConversationSettingsTaskLoader.Results> {

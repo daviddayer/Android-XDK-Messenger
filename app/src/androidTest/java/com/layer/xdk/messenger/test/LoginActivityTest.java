@@ -1,12 +1,12 @@
-package com.layer.messenger.test;
+package com.layer.xdk.messenger.test;
 
 import android.support.test.filters.LargeTest;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 import android.view.WindowManager;
 
-import com.layer.messenger.LoginActivity;
-import com.layer.messenger.R;
+import com.layer.xdk.messenger.LoginActivity;
+import com.layer.xdk.messenger.R;
 
 import org.junit.Before;
 import org.junit.Rule;

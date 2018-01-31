@@ -1,4 +1,4 @@
-package com.layer.messenger.util;
+package com.layer.xdk.messenger.util;
 
 import android.app.Activity;
 import android.content.Context;
@@ -6,9 +6,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.widget.Toast;
 
-import com.layer.messenger.R;
-import com.layer.messenger.LoginActivity;
-import com.layer.messenger.ResumeActivity;
+import com.layer.xdk.messenger.R;
+import com.layer.xdk.messenger.LoginActivity;
+import com.layer.xdk.messenger.ResumeActivity;
 import com.layer.sdk.LayerClient;
 import com.layer.sdk.exceptions.LayerException;
 
@@ -20,7 +20,7 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import static com.layer.messenger.util.Util.streamToString;
+import static com.layer.xdk.messenger.util.Util.streamToString;
 
 public class LayerAuthenticationProvider implements AuthenticationProvider<LayerAuthenticationProvider.Credentials> {
     private static final String TAG = LayerAuthenticationProvider.class.getSimpleName();

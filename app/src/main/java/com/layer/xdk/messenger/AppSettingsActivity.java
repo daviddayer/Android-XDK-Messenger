@@ -1,4 +1,4 @@
-package com.layer.messenger;
+package com.layer.xdk.messenger;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -24,10 +24,10 @@ import com.layer.xdk.ui.avatar.AvatarViewModelImpl;
 import com.layer.xdk.ui.identity.IdentityFormatterImpl;
 import com.layer.xdk.ui.presence.PresenceView;
 import com.layer.xdk.ui.util.Util;
-import com.layer.messenger.util.ConversationSettingsTaskLoader;
-import com.layer.messenger.util.ConversationSettingsTaskLoader.Results;
+import com.layer.xdk.messenger.util.ConversationSettingsTaskLoader;
+import com.layer.xdk.messenger.util.ConversationSettingsTaskLoader.Results;
 
-import com.layer.messenger.util.Log;
+import com.layer.xdk.messenger.util.Log;
 import com.layer.sdk.LayerClient;
 import com.layer.sdk.changes.LayerChangeEvent;
 import com.layer.sdk.exceptions.LayerException;
@@ -105,7 +105,7 @@ public class AppSettingsActivity extends BaseActivity implements LayerConnection
         mDiskAllowance = (TextView) findViewById(R.id.disk_allowance);
         mAutoDownloadMimeTypes = (TextView) findViewById(R.id.auto_download_mime_types);
 
-        mAvatarView.init(new AvatarViewModelImpl(com.layer.messenger.util.Util.getImageCacheWrapper()), new IdentityFormatterImpl(getApplicationContext()));
+        mAvatarView.init(new AvatarViewModelImpl(com.layer.xdk.messenger.util.Util.getImageCacheWrapper()), new IdentityFormatterImpl(getApplicationContext()));
 
         getSupportLoaderManager().initLoader(R.id.setting_loader_id, null, this);
 

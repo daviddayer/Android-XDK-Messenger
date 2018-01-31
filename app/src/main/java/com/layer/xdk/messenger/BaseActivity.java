@@ -1,4 +1,4 @@
-package com.layer.messenger;
+package com.layer.xdk.messenger;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;

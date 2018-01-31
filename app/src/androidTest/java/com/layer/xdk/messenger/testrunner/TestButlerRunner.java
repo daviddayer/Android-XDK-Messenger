@@ -1,4 +1,4 @@
-package com.layer.messenger.testrunner;
+package com.layer.xdk.messenger.testrunner;
 
 import android.os.Bundle;
 import android.support.test.InstrumentationRegistry;

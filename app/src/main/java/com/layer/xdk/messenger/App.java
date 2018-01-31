@@ -1,4 +1,4 @@
-package com.layer.messenger;
+package com.layer.xdk.messenger;
 
 import android.app.Activity;
 import android.app.Application;
@@ -6,10 +6,10 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.StrictMode;
 
-import com.layer.messenger.util.AuthenticationProvider;
-import com.layer.messenger.util.CustomEndpoint;
-import com.layer.messenger.util.LayerAuthenticationProvider;
-import com.layer.messenger.util.Log;
+import com.layer.xdk.messenger.util.AuthenticationProvider;
+import com.layer.xdk.messenger.util.CustomEndpoint;
+import com.layer.xdk.messenger.util.LayerAuthenticationProvider;
+import com.layer.xdk.messenger.util.Log;
 import com.layer.sdk.LayerClient;
 import com.layer.xdk.ui.message.messagetypes.text.TextCellFactory;
 import com.layer.xdk.ui.message.messagetypes.threepartimage.ThreePartImageConstants;
@@ -53,7 +53,7 @@ public class App extends Application {
         // Enable verbose logging in debug builds
         if (BuildConfig.DEBUG) {
             com.layer.xdk.ui.util.Log.setLoggingEnabled(true);
-            com.layer.messenger.util.Log.setAlwaysLoggable(true);
+            com.layer.xdk.messenger.util.Log.setAlwaysLoggable(true);
             LayerClient.setLoggingEnabled(this, true);
             LayerClient.setPrivateLoggingEnabled(true);
 
@@ -74,7 +74,7 @@ public class App extends Application {
         // Allow the LayerClient to track app state
         LayerClient.applicationCreated(this);
 
-        com.layer.messenger.util.Util.init(this, getLayerClient(), getPicasso());
+        com.layer.xdk.messenger.util.Util.init(this, getLayerClient(), getPicasso());
     }
 
     public static Application getInstance() {

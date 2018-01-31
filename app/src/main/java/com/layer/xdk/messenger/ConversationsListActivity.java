@@ -1,4 +1,4 @@
-package com.layer.messenger;
+package com.layer.xdk.messenger;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,9 +8,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.layer.messenger.databinding.ActivityConversationsListBinding;
-import com.layer.messenger.util.Log;
-import com.layer.messenger.util.Util;
+import com.layer.xdk.messenger.databinding.ActivityConversationsListBinding;
+import com.layer.xdk.messenger.util.Log;
+import com.layer.xdk.messenger.util.Util;
 import com.layer.sdk.LayerClient;
 import com.layer.sdk.messaging.Conversation;
 import com.layer.xdk.ui.conversation.ConversationItemsListView;

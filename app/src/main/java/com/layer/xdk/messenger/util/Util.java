@@ -1,8 +1,8 @@
-package com.layer.messenger.util;
+package com.layer.xdk.messenger.util;
 
 import android.content.Context;
 
-import com.layer.messenger.App;
+import com.layer.xdk.messenger.App;
 import com.layer.sdk.LayerClient;
 import com.layer.xdk.ui.conversationitem.ConversationItemFormatter;
 import com.layer.xdk.ui.identity.IdentityFormatter;

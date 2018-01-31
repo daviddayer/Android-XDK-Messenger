@@ -1,4 +1,4 @@
-package com.layer.messenger.util;
+package com.layer.xdk.messenger.util;
 
 /**
  * Unified Log class used by Atlas Messenger classes that maintains similar signatures to

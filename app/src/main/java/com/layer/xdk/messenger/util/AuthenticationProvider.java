@@ -1,4 +1,4 @@
-package com.layer.messenger.util;
+package com.layer.xdk.messenger.util;
 
 import android.app.Activity;
 

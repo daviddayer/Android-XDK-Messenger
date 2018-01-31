@@ -6,12 +6,12 @@ android {
     buildToolsVersion '26.0.2'
 
     defaultConfig {
-        applicationId "com.layer.messenger"
+        applicationId "com.layer.xdk.messenger"
         minSdkVersion 14
         targetSdkVersion 24
         versionCode 67
         versionName "$versionCode"
-        testInstrumentationRunner 'com.layer.messenger.testrunner.TestButlerRunner'
+        testInstrumentationRunner 'com.layer.xdk.messenger.testrunner.TestButlerRunner'
         multiDexEnabled true
 
     }

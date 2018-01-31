@@ -1,4 +1,4 @@
-package com.layer.messenger.util;
+package com.layer.xdk.messenger.util;
 
 import android.content.Context;
 import android.support.annotation.Nullable;
@@ -7,8 +7,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-import com.layer.messenger.App;
-import com.layer.messenger.util.Log;
+import com.layer.xdk.messenger.App;
 import com.layer.sdk.LayerClient;
 
 import org.json.JSONArray;

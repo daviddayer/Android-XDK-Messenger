@@ -1,4 +1,4 @@
-package com.layer.messenger;
+package com.layer.xdk.messenger;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
@@ -15,8 +15,8 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.TextView;
 
-import com.layer.messenger.databinding.ActivityMessagesListBinding;
-import com.layer.messenger.util.Util;
+import com.layer.xdk.messenger.databinding.ActivityMessagesListBinding;
+import com.layer.xdk.messenger.util.Util;
 import com.layer.sdk.LayerClient;
 import com.layer.sdk.changes.LayerChange;
 import com.layer.sdk.changes.LayerChangeEvent;

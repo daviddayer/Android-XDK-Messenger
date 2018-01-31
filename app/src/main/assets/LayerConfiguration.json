@@ -1,7 +1,7 @@
 [
   {
-    "name": null,
-    "app_id": null,
-    "identity_provider_url": null
+    "name":"Messaging 2.0 Sample",
+    "app_id":"layer:///apps/staging/2f1707c0-fd2f-11e6-ae72-c27751092ce1",
+    "identity_provider_url":"https://layer-quickstart-michael.herokuapp.com/authenticate"
   }
 ]

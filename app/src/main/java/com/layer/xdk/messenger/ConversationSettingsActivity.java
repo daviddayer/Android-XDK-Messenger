@@ -1,4 +1,4 @@
-package com.layer.messenger;
+package com.layer.xdk.messenger;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -20,8 +20,8 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.layer.messenger.databinding.ActivityConversationSettingsBinding;
-import com.layer.messenger.util.Util;
+import com.layer.xdk.messenger.databinding.ActivityConversationSettingsBinding;
+import com.layer.xdk.messenger.util.Util;
 import com.layer.sdk.LayerClient;
 import com.layer.sdk.changes.LayerChangeEvent;
 import com.layer.sdk.listeners.LayerChangeEventListener;
