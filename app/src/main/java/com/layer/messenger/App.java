@@ -11,10 +11,10 @@ import com.layer.messenger.util.CustomEndpoint;
 import com.layer.messenger.util.LayerAuthenticationProvider;
 import com.layer.messenger.util.Log;
 import com.layer.sdk.LayerClient;
-import com.layer.ui.message.messagetypes.text.TextCellFactory;
-import com.layer.ui.message.messagetypes.threepartimage.ThreePartImageConstants;
-import com.layer.ui.util.Util;
-import com.layer.ui.util.imagecache.requesthandlers.MessagePartRequestHandler;
+import com.layer.xdk.ui.message.messagetypes.text.TextCellFactory;
+import com.layer.xdk.ui.message.messagetypes.threepartimage.ThreePartImageConstants;
+import com.layer.xdk.ui.util.Util;
+import com.layer.xdk.ui.util.imagecache.requesthandlers.MessagePartRequestHandler;
 import com.squareup.picasso.Picasso;
 
 import java.util.Arrays;
@@ -52,7 +52,7 @@ public class App extends Application {
 
         // Enable verbose logging in debug builds
         if (BuildConfig.DEBUG) {
-            com.layer.ui.util.Log.setLoggingEnabled(true);
+            com.layer.xdk.ui.util.Log.setLoggingEnabled(true);
             com.layer.messenger.util.Log.setAlwaysLoggable(true);
             LayerClient.setLoggingEnabled(this, true);
             LayerClient.setPrivateLoggingEnabled(true);

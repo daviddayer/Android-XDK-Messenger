@@ -29,9 +29,9 @@ import com.layer.sdk.listeners.LayerPolicyListener;
 import com.layer.sdk.messaging.Conversation;
 import com.layer.sdk.messaging.Identity;
 import com.layer.sdk.policy.Policy;
-import com.layer.ui.identity.IdentityItemsListView;
-import com.layer.ui.identity.IdentityItemsListViewModel;
-import com.layer.ui.recyclerview.OnItemClickListener;
+import com.layer.xdk.ui.identity.IdentityItemsListView;
+import com.layer.xdk.ui.identity.IdentityItemsListViewModel;
+import com.layer.xdk.ui.recyclerview.OnItemClickListener;
 
 import java.util.HashSet;
 import java.util.List;

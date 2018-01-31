@@ -3,7 +3,7 @@
 
     <data>
 
-        <import type="com.layer.ui.conversation.ConversationItemsListViewModel"/>
+        <import type="com.layer.xdk.ui.conversation.ConversationItemsListViewModel"/>
 
         <variable
             name="viewModel"
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.layer.ui.conversation.ConversationItemsListView
+        <com.layer.xdk.ui.conversation.ConversationItemsListView
             android:id="@+id/conversations_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

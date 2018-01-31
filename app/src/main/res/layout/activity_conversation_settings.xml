@@ -3,7 +3,7 @@
 
     <data>
 
-        <import type="com.layer.ui.identity.IdentityItemsListViewModel"/>
+        <import type="com.layer.xdk.ui.identity.IdentityItemsListViewModel"/>
 
         <variable
             name="viewModel"
@@ -106,7 +106,7 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"/>
             </FrameLayout>
 
-            <com.layer.ui.identity.IdentityItemsListView
+            <com.layer.xdk.ui.identity.IdentityItemsListView
                 android:id="@+id/participants"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

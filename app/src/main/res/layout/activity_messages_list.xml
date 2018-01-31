@@ -5,7 +5,7 @@
 
         <variable
             name="viewModel"
-            type="com.layer.ui.conversation.ConversationViewModel"/>
+            type="com.layer.xdk.ui.conversation.ConversationViewModel"/>
     </data>
 
     <LinearLayout
@@ -13,12 +13,12 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.layer.ui.AddressBar
+        <com.layer.xdk.ui.AddressBar
             android:id="@+id/conversation_launcher"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-        <com.layer.ui.conversation.ConversationView
+        <com.layer.xdk.ui.conversation.ConversationView
             android:id="@+id/conversation"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

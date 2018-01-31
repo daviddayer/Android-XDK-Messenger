@@ -19,11 +19,11 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.layer.ui.avatar.AvatarView;
-import com.layer.ui.avatar.AvatarViewModelImpl;
-import com.layer.ui.identity.IdentityFormatterImpl;
-import com.layer.ui.presence.PresenceView;
-import com.layer.ui.util.Util;
+import com.layer.xdk.ui.avatar.AvatarView;
+import com.layer.xdk.ui.avatar.AvatarViewModelImpl;
+import com.layer.xdk.ui.identity.IdentityFormatterImpl;
+import com.layer.xdk.ui.presence.PresenceView;
+import com.layer.xdk.ui.util.Util;
 import com.layer.messenger.util.ConversationSettingsTaskLoader;
 import com.layer.messenger.util.ConversationSettingsTaskLoader.Results;
 
@@ -217,7 +217,7 @@ public class AppSettingsActivity extends BaseActivity implements LayerConnection
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 LayerClient.setLoggingEnabled(AppSettingsActivity.this, isChecked);
-                com.layer.ui.util.Log.setLoggingEnabled(isChecked);
+                com.layer.xdk.ui.util.Log.setLoggingEnabled(isChecked);
                 Log.setAlwaysLoggable(isChecked);
             }
         });

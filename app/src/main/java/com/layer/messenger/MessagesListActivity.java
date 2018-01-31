@@ -1,7 +1,5 @@
 package com.layer.messenger;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.net.Uri;
@@ -28,17 +26,16 @@ import com.layer.sdk.messaging.Conversation;
 import com.layer.sdk.messaging.ConversationOptions;
 import com.layer.sdk.messaging.Identity;
 import com.layer.sdk.messaging.LayerObject;
-import com.layer.sdk.messaging.Message;
-import com.layer.ui.AddressBar;
-import com.layer.ui.composebar.ComposeBar;
-import com.layer.ui.conversation.ConversationView;
-import com.layer.ui.conversation.ConversationViewModel;
-import com.layer.ui.message.MessageItemsListViewModel;
-import com.layer.ui.message.file.FileSender;
-import com.layer.ui.message.location.CurrentLocationSender;
-import com.layer.ui.message.messagetypes.threepartimage.CameraSender;
-import com.layer.ui.message.messagetypes.threepartimage.GallerySender;
-import com.layer.ui.message.text.RichTextSender;
+import com.layer.xdk.ui.AddressBar;
+import com.layer.xdk.ui.composebar.ComposeBar;
+import com.layer.xdk.ui.conversation.ConversationView;
+import com.layer.xdk.ui.conversation.ConversationViewModel;
+import com.layer.xdk.ui.message.MessageItemsListViewModel;
+import com.layer.xdk.ui.message.file.FileSender;
+import com.layer.xdk.ui.message.location.CurrentLocationSender;
+import com.layer.xdk.ui.message.messagetypes.threepartimage.CameraSender;
+import com.layer.xdk.ui.message.messagetypes.threepartimage.GallerySender;
+import com.layer.xdk.ui.message.text.RichTextSender;
 
 import java.util.HashSet;
 import java.util.List;

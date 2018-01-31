@@ -1,10 +1,8 @@
 package com.layer.messenger;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,10 +13,9 @@ import com.layer.messenger.util.Log;
 import com.layer.messenger.util.Util;
 import com.layer.sdk.LayerClient;
 import com.layer.sdk.messaging.Conversation;
-import com.layer.ui.adapters.ConversationItemsAdapter;
-import com.layer.ui.conversation.ConversationItemsListView;
-import com.layer.ui.conversation.ConversationItemsListViewModel;
-import com.layer.ui.recyclerview.OnItemClickListener;
+import com.layer.xdk.ui.conversation.ConversationItemsListView;
+import com.layer.xdk.ui.conversation.ConversationItemsListViewModel;
+import com.layer.xdk.ui.recyclerview.OnItemClickListener;
 
 public class ConversationsListActivity extends AppCompatActivity {
     private ConversationItemsListView mConversationsList;
