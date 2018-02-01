@@ -28,6 +28,7 @@ import com.layer.sdk.messaging.Identity;
 import com.layer.sdk.messaging.LayerObject;
 import com.layer.sdk.messaging.Message;
 import com.layer.xdk.messenger.databinding.ActivityMessagesListBinding;
+import com.layer.xdk.messenger.util.Log;
 import com.layer.xdk.messenger.util.Util;
 import com.layer.xdk.ui.AddressBar;
 import com.layer.xdk.ui.composebar.ComposeBar;
@@ -195,14 +196,14 @@ public class MessagesListActivity extends AppCompatActivity {
         mComposeBar = mActivityMessagesListBinding.conversation.getComposeBar();
         mComposeBar.setTextSender(new RichTextSender(this, App.getLayerClient()));
         mComposeBar.addAttachmentSendersToDefaultAttachmentButton(
-                new CameraSender(R.string.attachment_menu_camera,
+                new CameraSender(R.string.xdk_ui_attachment_menu_camera,
                         R.drawable.ic_photo_camera_white_24dp, this, App.getLayerClient(),
                         getApplicationContext().getPackageName() + ".file_provider"),
-                new GallerySender(R.string.attachment_menu_gallery, R.drawable.ic_photo_white_24dp, this, App.getLayerClient()),
-                new CurrentLocationSender(R.string.attachment_menu_current_location,
+                new GallerySender(R.string.xdk_ui_attachment_menu_gallery, R.drawable.ic_photo_white_24dp, this, App.getLayerClient()),
+                new CurrentLocationSender(R.string.xdk_ui_attachment_menu_current_location,
                         R.drawable.ic_place_white_24dp, this, App.getLayerClient(),
                         Util.getIdentityFormatter(this)),
-                new FileSender(this, App.getLayerClient(), R.string.attachment_menu_file));
+                new FileSender(this, App.getLayerClient(), R.string.xdk_ui_attachment_menu_file));
 
         mComposeBar.setOnMessageEditTextFocusChangeListener(new View.OnFocusChangeListener() {
             @Override

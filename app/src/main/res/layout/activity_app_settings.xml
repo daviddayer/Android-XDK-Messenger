@@ -35,13 +35,13 @@
 
                 <com.layer.xdk.ui.avatar.AvatarView
                     android:id="@+id/avatar"
-                    android:layout_width="@dimen/layer_ui_avatar_width"
-                    android:layout_height="@dimen/layer_ui_avatar_height"
+                    android:layout_width="@dimen/xdk_ui_avatar_width"
+                    android:layout_height="@dimen/xdk_ui_avatar_height"
                     android:layout_gravity="center_vertical" />
 
                 <com.layer.xdk.ui.presence.PresenceView
-                    android:layout_width="@dimen/layer_ui_avatar_presence_height"
-                    android:layout_height="@dimen/layer_ui_avatar_presence_height"
+                    android:layout_width="@dimen/xdk_ui_avatar_presence_height"
+                    android:layout_height="@dimen/xdk_ui_avatar_presence_height"
                     android:layout_gravity="bottom|right"
                     android:id="@+id/presence" />
 
@@ -85,7 +85,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/layer_ui_view_divider" />
+            android:background="@color/xdk_ui_view_divider" />
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -120,7 +120,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/layer_ui_view_divider"/>
+            android:background="@color/xdk_ui_view_divider"/>
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -164,12 +164,12 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/layer_ui_view_divider" />
+            android:background="@color/xdk_ui_view_divider" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/layer_ui_view_divider"/>
+            android:background="@color/xdk_ui_view_divider"/>
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -213,7 +213,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/layer_ui_view_divider" />
+            android:background="@color/xdk_ui_view_divider" />
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -372,7 +372,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/layer_ui_view_divider" />
+            android:background="@color/xdk_ui_view_divider" />
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -461,7 +461,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/layer_ui_view_divider" />
+            android:background="@color/xdk_ui_view_divider" />
 
         <FrameLayout
             android:layout_width="match_parent"
