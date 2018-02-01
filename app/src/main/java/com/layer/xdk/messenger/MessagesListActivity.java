@@ -28,7 +28,6 @@ import com.layer.sdk.messaging.Identity;
 import com.layer.sdk.messaging.LayerObject;
 import com.layer.sdk.messaging.Message;
 import com.layer.xdk.messenger.databinding.ActivityMessagesListBinding;
-import com.layer.xdk.messenger.util.Log;
 import com.layer.xdk.messenger.util.Util;
 import com.layer.xdk.ui.AddressBar;
 import com.layer.xdk.ui.composebar.ComposeBar;
