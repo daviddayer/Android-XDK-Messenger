@@ -51,7 +51,7 @@
         android:layout_marginEnd="@dimen/xdk_ui_padding_normal"
         android:scaleType="center"
         android:src="@drawable/ic_block_white_24dp"
-        android:tint="@color/layer_ui_icon_enabled"
+        android:tint="@color/xdk_ui_icon_enabled"
         android:visibility="invisible"
         />
 </LinearLayout>
